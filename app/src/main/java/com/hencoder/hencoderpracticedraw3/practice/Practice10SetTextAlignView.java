@@ -39,9 +39,13 @@ public class Practice10SetTextAlignView extends View {
         canvas.drawText(text, getWidth() / 2, 100, paint);
 
         // 第二处：使用 Paint.Align.CENTER
+        paint.setTextAlign(Paint.Align.CENTER);
         canvas.drawText(text, getWidth() / 2, 200, paint);
 
         // 第三处：使用 Paint.Align.RIGHT
+        paint.setTextAlign(Paint.Align.RIGHT);
         canvas.drawText(text, getWidth() / 2, 300, paint);
+
+        paint.setTextAlign(Paint.Align.LEFT);
     }
 }
